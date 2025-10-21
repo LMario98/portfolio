@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   document.getElementById('hero-name').textContent = persona.name;
+
+  // Impostazione dell'anno corrente nel footer
+  //auto update year
   document.getElementById('year').textContent = new Date().getFullYear();
 
   // Aggiornamento sezione About
