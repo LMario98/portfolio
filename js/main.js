@@ -17,14 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
 // aggiungere una funzione che cambia il saluto dinamicamente
 
 function changeWave(){
-  const rotationWave = ["ciao", "Hello", "Hi"];
+  const rotationWave = ["Ciao", "Hello", "Hi"];
   const num = Math.floor(Math.random() * 3)
   
 
 const foo = document.getElementsByClassName('wave')[0].textContent = rotationWave[num];
 
 
-console.log(foo)
 };
 changeWave()
   // Aggiornamento sezione About
