@@ -50,8 +50,9 @@
                 <div class="col-md-7">
                     <h1 class="display-5"><span class="wave"></span>, I'm <span id="hero-name"></span>👋</h1>
                     <p class="lead">Junior Full-Stack Developer with training in software development.
-                         After several years of experience in the hospitality sector—
-                        where I developed precision, reliability, and strong teamwork skills—I am now pursuing a career in
+                        After several years of experience in the hospitality sector—
+                        where I developed precision, reliability, and strong teamwork skills—I am now pursuing a career
+                        in
                         IT. Highly motivated to grow as a developer and contribute with problem-solving and
                         creativity to innovative digital projects. </p>
                     <div class="mt-4">
@@ -127,9 +128,11 @@
                         <div class="card-body">
                             <h5 class="card-title">Try2Win</h5>
                             <p class="card-text muted">
-                                 This project is private to protect sensitive data (API keys). You can view a live demo instead.
+                                This project is private to protect sensitive data (API keys). You can view a live demo
+                                instead.
                             </p>
-                            <a href="https://try2winrender-2.onrender.com/" target="_blank" title="Repository private, live demo available"
+                            <a href="https://try2winrender-2.onrender.com/" target="_blank"
+                                title="Repository private, live demo available"
                                 class="btn btn-outline-primary">Details</a>
                         </div>
                     </div>
@@ -155,44 +158,40 @@
                     <p class="mt-3">Feel free to reach out for collaborations or just a friendly hello!</p>
                 </div>
                 <div class="col-md-6">
-                    <!-- change the form until  -->
-                    <form id="contactForm" class="mt-4" novalidate>
+
+                    <form action="https://formspree.io/f/xrerkovr" method="POST" class="mt-4">
                         <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" required>
+                            <label class="form-label">Your email</label>
+                            <input type="email" name="email" class="form-control" required>
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <label class="form-label">Your message</label>
+                            <textarea name="message" class="form-control" rows="4" required></textarea>
                         </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="4" required></textarea>
-                        </div>
-                        <button class="btn btn-primary" type="submit">Send</button>
+                        <button type="submit" class="btn btn-primary">Send</button>
                     </form>
-                    <!-- until here -->
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-<footer class="py-3 text-center bg-dark text-white">
-    <div class="container">
-        <p>
-            &copy; <span id="year"></span> Mario Lo Coco &mdash;
-            <a href="https://github.com/LMario98" target="_blank" class="text-white text-decoration-none">
-              GitHub  <i class="fab fa-github" aria-hidden="true"></i>
-                <span class="visually-hidden">GitHub Profile</span>
-            </a>
-            <a href="https://www.linkedin.com/in/mario-lo-coco-8a245423a/" target="_blank" class="text-white text-decoration-none">
-              LinkedIn  <i class="fab fa-linkedin" aria-hidden="true"></i>
-                <span class="visually-hidden">LinkedIn Profile</span>
-            </a>
-        </p>
-    </div>
-</footer>
+    <footer class="py-3 text-center bg-dark text-white">
+        <div class="container">
+            <p>
+                &copy; <span id="year"></span> Mario Lo Coco &mdash;
+                <a href="https://github.com/LMario98" target="_blank" class="text-white text-decoration-none">
+                    GitHub <i class="fab fa-github" aria-hidden="true"></i>
+                    <span class="visually-hidden">GitHub Profile</span>
+                </a>
+                <a href="https://www.linkedin.com/in/mario-lo-coco-8a245423a/" target="_blank"
+                    class="text-white text-decoration-none">
+                    LinkedIn <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    <span class="visually-hidden">LinkedIn Profile</span>
+                </a>
+            </p>
+        </div>
+    </footer>
 
 
     <!-- Bootstrap JS -->
