@@ -21,7 +21,7 @@ function changeWave(){
   const num = Math.floor(Math.random() * 3)
   
 
-const foo = document.getElementsByClassName('wave')[0].textContent = rotationWave[num];
+const currentWave = document.getElementsByClassName('wave')[0].textContent = rotationWave[num];
 
 
 };
