@@ -14,18 +14,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // Impostazione dell'anno corrente nel footer
   //auto update year
   document.getElementById('year').textContent = new Date().getFullYear();
-// aggiungere una funzione che cambia il saluto dinamicamente
+  // aggiungere una funzione che cambia il saluto dinamicamente
 
-function changeWave(){
-  const rotationWave = ["Ciao", "Hello", "Hi"];
-  const num = Math.floor(Math.random() * 3)
-  
-
-const currentWave = document.getElementsByClassName('wave')[0].textContent = rotationWave[num];
+  function changeWave() {
+    const rotationWave = ["Ciao", "Hello", "Hi"];
+    const num = Math.floor(Math.random() * 3)
 
 
-};
-changeWave()
+    const currentWave = document.getElementsByClassName('wave')[0].textContent = rotationWave[num];
+
+
+  };
+  changeWave()
   // Aggiornamento sezione About
   const aboutSection = document.querySelector('#about p.muted');
   if (aboutSection) aboutSection.textContent = persona.description;
@@ -34,17 +34,17 @@ changeWave()
   if (emailLink) emailLink.textContent = persona.email;
 
   const locationEl = document.querySelector('#about .card p:nth-child(3)');
-  if (locationEl) locationEl.innerHTML = `<strong>Località:</strong> ${persona.location}`;
+  if (locationEl) locationEl.innerHTML = `<strong>Location:</strong> ${persona.location}`;
 
   const contactForm = document.getElementById('contactForm');
-  contactForm.addEventListener('submit', function(e){
-    e.preventDefault();
-    if(!contactForm.checkValidity()) {
-      contactForm.classList.add('was-validated');
-      return;
-    }
-    alert('Message sent! I will reply soon.');
-    contactForm.reset();
-    contactForm.classList.remove('was-validated');
-  });
+  // contactForm.addEventListener('submit', function(e){
+  //   e.preventDefault();
+  //   if(!contactForm.checkValidity()) {
+  //     contactForm.classList.add('was-validated');
+  //     return;
+  //   }
+  //   alert('Message sent! I will reply soon.');
+  //   contactForm.reset();
+  //   contactForm.classList.remove('was-validated');
+  // });
 });
